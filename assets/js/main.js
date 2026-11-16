@@ -267,6 +267,15 @@
   }
   $$('a[download]').forEach(function (a) { a.addEventListener('click', function (e) { confetti(e.clientX, e.clientY); }); });
 
+
+  /* ---------- looping site recordings: play only when visible; respect reduced motion ---------- */
+  $$('.browser-video').forEach(function (v) {
+    if (reduce) { v.removeAttribute('autoplay'); v.pause(); v.controls = true; return; }
+    if (!('IntersectionObserver' in window)) return;
+    new IntersectionObserver(function (es) {
+      es.forEach(function (en) { if (en.isIntersecting) { var p = v.play(); if (p && p.catch) p.catch(function () {}); } else { v.pause(); } });
+    }, { threshold: 0.15 }).observe(v);
+  });
   /* ---------- contact (address and form endpoint come from config.js) ---------- */
   var SITE = window.SITE || {};
   if (SITE.email) {
