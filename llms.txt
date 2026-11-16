@@ -1,0 +1,60 @@
+# Aline da Silva — Creative Manager & Senior Brand, Marketing & Web Designer
+
+> Portfolio of Aline da Silva, a Creative Manager and hands-on senior designer with 13+ years of experience across brand, marketing, growth and web design for B2B SaaS and technology companies. Based in Florianópolis, Brazil; works remotely with US and international teams. Open to senior roles.
+
+- Site (English): https://alinehojesou.github.io/
+- Site (Português): https://alinehojesou.github.io/pt/
+- Résumé (PDF): https://alinehojesou.github.io/assets/Aline-da-Silva-Resume.pdf
+- LinkedIn: https://www.linkedin.com/in/aline-da-silva
+- Behance: https://www.behance.net/hojesoualine
+- Email: hojesoualine@gmail.com
+- Contact: form at https://alinehojesou.github.io/#contact
+
+## Summary
+
+- Current role: Creative Manager at CommerceIQ (retail media AI platform), since 2024
+- Focus: brand design, marketing design, growth design, marketing websites and landing pages, campaigns, sales enablement, eBooks and reports, email marketing, creative direction
+- Tools: Figma, Webflow, WordPress, HubSpot, Adobe Creative Cloud, HTML/CSS, Claude and generative-image workflows
+- Roles she is open to: Senior Brand Designer, Senior Marketing Designer, Growth Designer, Brand & Web Designer, Marketing Web Designer, Design Lead, Creative Lead, Creative Manager
+- Not her focus: product design / complex application UX, UX research, 3D
+- Location: Florianópolis, Santa Catarina, Brazil (UTC−3) — 100% remote
+- Languages: Portuguese (native), English (professional)
+
+## Case studies
+
+- [A website nobody could touch](https://alinehojesou.github.io/#commerceiq-website) — Website · CommerceIQ. CommerceIQ ran on WordPress with rigid HTML themes — even reordering a section meant a developer and a multi-day ticket. I planned the site as a living system and rebuilt it across three generations, each one cutting dev dependency and raising the design bar. Result: A site the team publishes on its own, in one visual system that scales across every property.
+- [Landing pages that carried a Series A](https://alinehojesou.github.io/#arena-marketing) — Marketing · Arena. Arena is a live-streaming engagement platform used by Vans, Fox Sports, Meta, Nubank and TV Globo. While the company was raising its next round, marketing had to keep the funnel full — and I designed nearly every asset that fed it. Result: The marketing material that accompanied Arena from a seed round to a Series A.
+- [Sales enablement as a system](https://alinehojesou.github.io/#commerceiq-sales) — Sales · CommerceIQ. 100% of sales material runs through me, in partnership with Sales and Product Marketing. The problem was never a single deck — it was the constant stream of one-off requests. The fix: a system. Result: A visual sales system — not loose pieces — that shortens the cycle and lets Sales self-serve.
+- [Content as a machine, at scale and on-brand](https://alinehojesou.github.io/#commerceiq-content) — Content · CommerceIQ. eBooks, video and podcast — produced in volume without losing the brand. I brought generative image and Claude into the flow to cut turnaround, and moved the team from Adobe to a Figma-first system. Result: A content machine that produces at scale without losing the brand — turbo-charged by AI in the flow.
+
+## Experience
+
+- 2024—present — Creative Manager, CommerceIQ (Retail media AI platform · Remote). Own the company website and landing pages in Webflow and WordPress; produce 100% of sales enablement (RFP decks, eBooks, reports); design and deploy HubSpot email campaigns end-to-end; bring Claude and generative image into the creative workflow; lead a 2-person creative team while staying hands-on.
+- 2021—24 — Senior Visual Designer, Arena (Live-streaming engagement platform · Remote (US)). Led the redesign of product and eBook landing pages in Figma and Webflow, supporting growth from a $1.3M seed to a $13.6M Series A; designed HubSpot and Intercom email flows across the funnel; produced investor and executive decks with the CEO and VP of Marketing.
+- 2020—24 — Senior Visual Designer, NoLimit Creatives (Subscription design agency · Remote (US)). Delivered social content, eBooks and email designs for a concurrent portfolio of clients, presenting three creative concepts per brief within SLA turnaround times.
+- 2018—19 — Graphic Designer, NSC Comunicação (TV Globo affiliate · 4 daily newspapers). Designed daily newspaper layouts under strict deadlines; led branding and launch for three podcasts (TechSC, Fora do Tom, Totalizando); won two Prêmio NSC de Comunicação awards.
+- 2017—18 — Senior Art Director, Vento Propaganda (Brand strategy consultancy). Led a multidisciplinary team of designers, copywriters and developers across branding, web, social and print.
+- 2016—17 — Senior Art Director, Gas Comunicação (Full-service agency · O Boticário, MMartan, Artex). Conceptualized and led TV campaign creative for MMartan and Artex, rolled out across social, billboards, storefronts and print.
+- 2015—16 — Creative Director, Eaf House (Growth-driven design agency). Directed digital strategy and creative for client accounts — newsletters, eBooks, landing pages, social — with A/B testing to optimize for conversion.
+- 2014—15 — Art Director, Mormaii Fitness (Performance fitness brand). Built the sub-brand from scratch — identity, print, uniforms, social — and designed its first website and franchise portals.
+- 2013—14 — Junior Graphic Designer, Clint.Digital (Digital consultancy · Nestlé, Jose Cuervo, Netshoes, Uber). Designed social assets, newsletters and web banners for national and global brand accounts.
+
+## Awards and education
+
+- Winner, Image/Design — Prêmio NSC de Comunicação 2019
+- Winner, Multimedia Project — Prêmio NSC de Comunicação 2019
+- B.A. in Social Communication (Advertising), Universidade Estácio de Sá — full scholarship
+
+## Questions and answers
+
+**What kind of roles is Aline da Silva open to?** Senior, hands-on design roles where design drives marketing and growth: Senior Brand Designer, Senior Marketing Designer, Growth Designer, Brand & Web Designer, Marketing Web Designer, Design Lead, Creative Lead and Creative Manager.
+
+**Where is she based, and does she work remotely?** Florianópolis, Brazil (UTC−3). She works 100% remotely and has worked with US-based B2B SaaS teams since 2020, overlapping with US Eastern and Pacific hours.
+
+**What does she design and build?** Marketing websites and landing pages (designed in Figma, built in Webflow and WordPress), brand systems, campaigns, sales enablement decks and RFP experiences, eBooks and reports, HubSpot email, event materials and motion storyboards.
+
+**Which industries has she worked in?** B2B SaaS, AI, ecommerce and retail media (CommerceIQ), live-streaming and martech (Arena), plus agencies, brand consultancies and one of Brazil’s largest media groups.
+
+**How does she use AI in design work?** Claude and generative image are part of her daily workflow — for campaign concepting, on-brand landing pages and decks, HTML animations and faster production — without losing craft.
+
+**Which languages does she work in?** Portuguese (native) and English (professional; she is a former English teacher).
