@@ -180,17 +180,29 @@
     })();
   }
 
-  /* ---------- cursor label ---------- */
+  /* ---------- custom cursor ---------- */
   var cur = $('.cursor');
-  if (cur && fine) {
-    var cx = 0, cy = 0, tx = 0, ty = 0, shown = false;
+  if (cur && fine && !reduce) {
+    var cx = -100, cy = -100, tx = -100, ty = -100, label = $('.cur-label', cur), started = false;
+    label.textContent = cur.dataset.view;
+    var LINK = 'a, button, .filter, summary, label, [role=button]';
     addEventListener('pointermove', function (e) {
       tx = e.clientX; ty = e.clientY;
-      var t = e.target.closest ? e.target.closest('.card a, .stk') : null;
-      if (t) { var txt = t.classList.contains('stk') ? cur.dataset.drag : cur.dataset.view; if (cur.textContent !== txt) cur.textContent = txt; }
-      if (!!t !== shown) { shown = !!t; cur.classList.toggle('on', shown); }
+      if (!started) { started = true; cx = tx; cy = ty; root.classList.add('cc'); }
+      var el = e.target.closest ? e.target : null; if (!el) return;
+      var t = el.closest('.card a, .stk'), txt = '';
+      if (t) txt = t.classList.contains('stk') ? cur.dataset.drag : cur.dataset.view;
+      if (txt && label.textContent !== txt) label.textContent = txt;
+      cur.classList.toggle('on', !!t);
+      cur.classList.toggle('link', !t && !!el.closest(LINK));
+      cur.classList.toggle('text', !!el.closest('input, textarea'));
     }, { passive: true });
-    (function follow() { cx += (tx - cx) * 0.22; cy += (ty - cy) * 0.22; cur.style.transform = 'translate(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px)'; requestAnimationFrame(follow); })();
+    addEventListener('pointerdown', function () { cur.classList.add('down'); });
+    addEventListener('pointerup', function () { cur.classList.remove('down'); });
+    document.addEventListener('mouseleave', function () { root.classList.remove('cc'); started = false; });
+    var dlg = $('#lb');
+    if (dlg) { new MutationObserver(function () { root.classList.toggle('cc', !dlg.open && started); }).observe(dlg, { attributes: true, attributeFilter: ['open'] }); }
+    (function follow() { cx += (tx - cx) * 0.3; cy += (ty - cy) * 0.3; cur.style.transform = 'translate(' + cx.toFixed(1) + 'px,' + cy.toFixed(1) + 'px)'; requestAnimationFrame(follow); })();
   }
 
   /* ---------- magnetic buttons + dock magnification ---------- */

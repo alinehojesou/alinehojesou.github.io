@@ -317,3 +317,22 @@ dialog::backdrop{background:rgba(17,17,17,.86)}
 .browser-url .lock{font-size:10px;filter:grayscale(1);opacity:.7}
 .browser-video{display:block;width:100%;height:auto;aspect-ratio:1280/710;background:#120d1f}
 @media (max-width:560px){.browser-url .nav{display:none}.browser{rotate:0deg;box-shadow:6px 6px 0 var(--ink)}}
+
+/* v3: logos, browser hero, custom cursor */
+.marquee li{display:flex;align-items:center;padding:16px 38px}
+.marquee img{height:auto;max-width:none;mix-blend-mode:normal}
+.browser.case-shot{box-shadow:8px 8px 0 var(--ink)}
+.browser.case-shot .browser-video{width:100%}
+.cursor{background:none;padding:0;border-radius:0;opacity:0;scale:1;translate:none;z-index:400;transition:opacity .2s;font:700 13px var(--sans);color:#fff}
+.cc .cursor{opacity:1}
+.cc,.cc *{cursor:none!important}
+.cc input,.cc textarea{cursor:text!important}
+.cur-shape{position:absolute;left:-15px;top:-15px;width:30px;height:30px;background:var(--orange);clip-path:polygon(50.0% 0.0%,59.1% 10.0%,71.7% 5.0%,75.6% 17.9%,89.1% 18.8%,86.9% 32.2%,98.7% 38.9%,91.0% 50.0%,98.7% 61.1%,86.9% 67.8%,89.1% 81.2%,75.6% 82.1%,71.7% 95.0%,59.1% 90.0%,50.0% 100.0%,40.9% 90.0%,28.3% 95.0%,24.4% 82.1%,10.9% 81.2%,13.1% 67.8%,1.3% 61.1%,9.0% 50.0%,1.3% 38.9%,13.1% 32.2%,10.9% 18.8%,24.4% 17.9%,28.3% 5.0%,40.9% 10.0%);animation:curspin 7s linear infinite;transition:scale .28s cubic-bezier(.3,1.7,.5,1),background .2s,opacity .15s}
+@keyframes curspin{to{rotate:360deg}}
+.cursor.link .cur-shape{scale:2.3;background:var(--lime)}
+.cursor.down .cur-shape{scale:.7}
+.cursor.link.down .cur-shape{scale:1.8}
+.cursor.text .cur-shape{opacity:0}
+.cur-label{position:absolute;left:0;top:0;translate:-50% -50%;white-space:nowrap;background:var(--ink);color:#fff;padding:11px 17px;border-radius:99px;border:2px solid var(--lime);opacity:0;scale:.3;transition:opacity .15s,scale .25s cubic-bezier(.3,1.7,.5,1)}
+.cursor.on .cur-label{opacity:1;scale:1}.cursor.on .cur-shape{opacity:0}
+.cursor.link{mix-blend-mode:multiply}.cursor.on{mix-blend-mode:normal}
