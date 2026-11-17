@@ -245,7 +245,9 @@ dialog::backdrop{background:rgba(17,17,17,.86)}
 .lb-bar{position:sticky;top:0;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:12px 18px;background:var(--lime);border-bottom:2px solid var(--ink);z-index:2}
 .lb-bar h2{font-size:clamp(20px,2.4vw,32px);letter-spacing:-.04em;line-height:1}
 .lb-bar .pill{padding:.6em 1em;flex:none}
-.lb-body img{width:100%}
+.lb-body img,.lb-body video{display:block;width:100%;height:auto}
+.lb-body{background:#fff}
+.lb-body .nar{max-width:100%;margin:0 auto}
 
 .js .reveal{opacity:0;transform:translateY(34px) rotate(.6deg);transition:opacity .7s,transform .8s cubic-bezier(.2,.9,.2,1)}
 .js .reveal.in{opacity:1;transform:none}

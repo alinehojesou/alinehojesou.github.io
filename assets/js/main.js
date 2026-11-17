@@ -115,12 +115,24 @@
     var parts = (window.WORK || {})[slug] || [];
     if (!lb || !lb.showModal || !parts.length) return false;
     lbTitle.textContent = title; lbBody.innerHTML = '';
-    parts.forEach(function (h, i) {
-      var im = new Image();
-      im.width = 1280; im.height = h; im.alt = title + ' — ' + (i + 1) + '/' + parts.length;
-      if (i > 0) im.loading = 'lazy';
-      im.decoding = 'async'; im.src = window.ASSETS + 'img/work/' + slug + '-' + (i + 1) + '.webp' + (window.VER ? '?v=' + window.VER : '');
-      lbBody.appendChild(im);
+    var q = window.VER ? '?v=' + window.VER : '';
+    parts.forEach(function (p, i) {
+      var h = p, w = 1280, vid = false;
+      if (typeof p !== 'number') { h = p[0]; w = p[1]; vid = p[2] === 'v'; }
+      var base = window.ASSETS + 'img/work/' + slug + '-' + (i + 1), el;
+      if (vid) {
+        el = document.createElement('video');
+        el.muted = true; el.loop = true; el.autoplay = true; el.playsInline = true;
+        el.setAttribute('muted', ''); el.setAttribute('playsinline', ''); el.setAttribute('aria-label', title + ' — ' + (i + 1) + '/' + parts.length);
+        el.poster = base + '.webp' + q; el.src = base + '.mp4' + q;
+      } else {
+        el = new Image(); el.alt = title + ' — ' + (i + 1) + '/' + parts.length;
+        if (i > 0) el.loading = 'lazy';
+        el.decoding = 'async'; el.src = base + '.webp' + q;
+      }
+      el.width = w; el.height = h;
+      if (w < 1280) { el.className = 'nar'; el.style.width = w + 'px'; }
+      lbBody.appendChild(el);
     });
     lb.showModal(); lb.scrollTop = 0; return true;
   }
@@ -129,6 +141,7 @@
       a.addEventListener('click', function (e) { if (openWork(a.dataset.slug, a.dataset.title)) e.preventDefault(); });
     });
     $('#lb-x').addEventListener('click', function () { lb.close(); });
+    lb.addEventListener('close', function () { $$('video', lbBody).forEach(function (v) { v.pause(); }); lbBody.innerHTML = ''; });
     lb.addEventListener('click', function (e) { if (e.target === lb) lb.close(); });
   }
 
