@@ -119,7 +119,7 @@
       var im = new Image();
       im.width = 1280; im.height = h; im.alt = title + ' — ' + (i + 1) + '/' + parts.length;
       if (i > 0) im.loading = 'lazy';
-      im.decoding = 'async'; im.src = window.ASSETS + 'img/work/' + slug + '-' + (i + 1) + '.webp';
+      im.decoding = 'async'; im.src = window.ASSETS + 'img/work/' + slug + '-' + (i + 1) + '.webp' + (window.VER ? '?v=' + window.VER : '');
       lbBody.appendChild(im);
     });
     lb.showModal(); lb.scrollTop = 0; return true;
