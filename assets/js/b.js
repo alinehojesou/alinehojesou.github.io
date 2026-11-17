@@ -23,3 +23,16 @@
   });},{rootMargin:'0px',threshold:.15});
   vids.forEach(function(v){v.removeAttribute('autoplay');v.pause();io.observe(v);});
 })();
+;(function(){
+  document.querySelectorAll('.slot[data-seg]').forEach(function(f){
+    var v=f.querySelector('video'),seg=parseFloat(f.getAttribute('data-seg'));
+    v.preload='auto';
+    f.querySelectorAll('.tl-b').forEach(function(b){
+      ['pointerdown','mousedown'].forEach(function(t){b.addEventListener(t,function(e){e.stopPropagation();});});
+      b.addEventListener('click',function(){
+        try{v.currentTime=parseInt(b.getAttribute('data-i'),10)*seg+0.4;}catch(e){}
+        var p=v.play();if(p&&p.catch)p.catch(function(){});
+      });
+    });
+  });
+})();
