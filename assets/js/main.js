@@ -131,7 +131,7 @@
         el.decoding = 'async'; el.src = base + '.webp' + q;
       }
       el.width = w; el.height = h;
-      if (w < 1280) { el.className = 'nar'; el.style.width = w + 'px'; }
+      if (w < 1280) { el.className = 'nar'; el.style.width = (w / 12.8).toFixed(2) + '%'; }
       lbBody.appendChild(el);
     });
     lb.showModal(); lb.scrollTop = 0; return true;
