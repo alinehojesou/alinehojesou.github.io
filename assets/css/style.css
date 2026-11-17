@@ -418,3 +418,9 @@ dialog::backdrop{background:rgba(17,17,17,.86)}
 
 /* max content width 1360 */
 :root{--pad:max(clamp(16px,3vw,48px),calc((100vw - 1360px)/2))}
+
+/* scroll hint: more prominent */
+.strip-head{align-items:center}
+.strip-head .mono{display:inline-flex;align-items:center;gap:10px;background:var(--ink);color:#fff;border-radius:999px;padding:9px 18px;font-size:13px;letter-spacing:.08em;text-transform:uppercase;white-space:nowrap;box-shadow:3px 3px 0 var(--orange);animation:vb-nudge 1.6s ease-in-out infinite}
+@keyframes vb-nudge{0%,100%{transform:translateX(0)}50%{transform:translateX(6px)}}
+@media (prefers-reduced-motion:reduce){.strip-head .mono{animation:none}}
