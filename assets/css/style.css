@@ -429,8 +429,13 @@ dialog::backdrop{background:rgba(17,17,17,.86)}
 .slot.filled{position:relative}
 .tl{position:absolute;left:0;right:0;bottom:0;height:16%;pointer-events:none}
 .tl-b{position:absolute;top:0;width:15%;height:100%;transform:translateX(-50%);background:none;border:0;padding:0;cursor:pointer;pointer-events:auto;-webkit-tap-highlight-color:transparent}
-.tl-b::before{content:"";position:absolute;left:50%;top:22%;width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid transparent;transition:border-color .2s,transform .2s}
+.tl-b::before{content:"";position:absolute;left:50%;top:var(--dy,37%);width:26px;height:26px;margin:-13px 0 0 -13px;border-radius:50%;border:2px solid transparent;transition:border-color .2s,transform .2s}
 .tl-b:hover::before,.tl-b:focus-visible::before{border-color:var(--orange);transform:scale(1.15)}
 .tl-b::after{content:"";position:absolute;left:12%;right:12%;bottom:14%;height:2px;background:var(--orange);transform:scaleX(0);transition:transform .25s}
 .tl-b:hover::after,.tl-b:focus-visible::after{transform:scaleX(1)}
 .tl-b:focus-visible{outline:none}
+
+/* page-dots paginator */
+.dh{position:absolute;left:0;right:0;top:calc(var(--dy) - 4.5%);height:9%;cursor:pointer;z-index:2}
+.dh-ring{position:absolute;top:50%;width:20px;height:20px;margin:-10px 0 0 -10px;border-radius:50%;border:2px solid var(--orange);opacity:0;transition:opacity .15s,left .12s;pointer-events:none}
+.dh:hover .dh-ring{opacity:1}
