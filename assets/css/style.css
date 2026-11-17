@@ -416,5 +416,5 @@ dialog::backdrop{background:rgba(17,17,17,.86)}
 .cb-side .case-top{justify-content:flex-start}
 .chap .lead,.chap .lead.big,.chap p,.chap h4,.chap .block p{max-width:none}
 
-/* max content width 1210 */
-:root{--pad:max(clamp(16px,3vw,48px),calc((100vw - 1210px)/2))}
+/* max content width 1360 */
+:root{--pad:max(clamp(16px,3vw,48px),calc((100vw - 1360px)/2))}
